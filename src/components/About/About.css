@@ -1,0 +1,35 @@
+#about-outer-container {
+    background-image: url('./../../media/background5.png');
+    padding: 5%;
+}
+
+#about-container {
+    padding: 5%;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+#about-inner-container {
+    display: flex;
+}
+
+#about-header {
+    color: var(--gold);
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+#img-container {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#about-content-container {
+    padding: 5%;
+    padding-top: 0;
+    line-height: 5vh;
+    font-size: 17px;
+}

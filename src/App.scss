@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef&family=IBM+Plex+Sans+Hebrew&display=swap');
+
+*{
+  margin: 0;
+  font-family: 'IBM Plex Sans Hebrew', sans-serif;
+}
+
+#app-container {
+  --gold: rgb(206, 177, 114);
+  --border: 10px;
+  --gray: rgba(51,51,51);
+  --white: rgba(255, 255, 255, 0.888);
+  margin-top: 12vh;
+  background-color: var(--gray);
+}
