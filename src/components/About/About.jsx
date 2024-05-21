@@ -9,7 +9,7 @@ function About() {
                 <div id='about-header'>אודות</div>
                 <div id='about-inner-container'>
                     <div id='img-container'>
-                        <img src={profile} alt="" />
+                        <img id='profile' src={profile} alt="" />
                         <div id='img-text'>עו"ד יגאל אלקובי</div>
                     </div>
                     <div id='about-content-container'>

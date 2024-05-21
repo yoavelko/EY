@@ -1,13 +1,13 @@
 import './Header.css'
 import { Link } from 'react-router-dom'
 import logo from './cut-logo.png'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function Header() {
 
     window.onscroll = function () { scrollFunction() };
 
-    const [style, setStyle] = useState(true)
+    const [style, setStyle] = useState(true);
 
     function scrollFunction() {
         if (document.documentElement.scrollTop > 100) {

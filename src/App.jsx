@@ -6,6 +6,7 @@ import { Route, Routes, Outlet } from "react-router-dom";
 import Consulation from './components/Consulation/Consulation';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import Modal from './components/Modal/Modal';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   return (
     <div id='app-container'>
       <Routes>
-        <Route path="/" element={<> <Header /><Outlet /><Footer /></>}>
+        <Route path="/" element={<> <Header />< Modal /><Outlet /><Footer /></>}>
           <Route index element={<Homepage />} />
           <Route path="about" element={<About />} />
           <Route path='consulation' element={<Consulation />} />

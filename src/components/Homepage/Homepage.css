@@ -136,3 +136,52 @@
     font-size: 35px;
     font-weight: 900;
 }
+
+
+@media screen and (max-width: 500px) {
+
+    #introduction {
+        background-position: 20%;
+        color: black;
+        height: 30vh;
+    }
+
+    #header-flexer {
+        font-size: 16px;
+    }
+
+    #text-container {
+        line-height: 10vh;
+        padding-top: 2vh;
+    }
+
+    #intro-h3 {
+        font-size: 20px;
+    }
+
+    #homepage-header {
+        font-size: 24px;
+    }
+
+    .homepage-box-content {
+        padding: 5%;
+    }
+
+    .homepage-content {
+        width: 80vw;
+    }
+
+    #form-top-contianer {
+        flex-wrap: wrap;
+    }
+
+    .form-inputs {
+        width: 100%;
+        margin-top: 2vh;
+    }
+
+    #form-btn {
+        width: 100px;
+    }
+
+}

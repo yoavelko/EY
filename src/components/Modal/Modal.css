@@ -1,0 +1,61 @@
+#fixed-container {
+    position: fixed;
+    top: 60%;
+    left: 0;
+    padding: 30px;
+    padding-bottom: 60px;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 998;
+    background-color:  rgba(0, 0, 0, 0.807);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#whatsapp-logo {
+    width: 50px;
+    border-radius: 50px;
+    transition: .2s;
+}
+
+#whatsapp-logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#whatsapp-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#whatsapp-link-wraper {
+    line-height: 48px;
+    color: var(--gold);
+}
+
+#arrow {
+    transform: rotate(90deg);
+    animation: bounce 1s linear;
+    animation-iteration-count: infinite;
+    transition: .2s;
+    margin-bottom: 2vh;
+    margin-top: -1vh;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0px) rotate(90deg);}
+    80% {transform: translateY(8px) rotate(90deg);}
+    100% {transform: translateY(0px) rotate(90deg);}
+}
+
+
+@media only screen and (max-width: 769px) {
+
+    #fixed-container {
+        height: 6vh;
+        width: 8vw;
+    }
+}

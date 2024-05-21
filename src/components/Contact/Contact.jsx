@@ -37,7 +37,9 @@ function Contact() {
                     <div>
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADLUlEQVR4nO2ZTWgTQRTHR/EbD0r1INUe1EO9qAfRkzexoCgI9qYee7C0yXsp1pNR6cGrXkSP6im22Xnb0pMSUVtomZnFUhDbIigqCn5UUAStjUwbNJlukt1mdxNh/zCHwMy+/2/zZt7khbFYsWLFaigJu2OD5HBVEcwowjlFmK/zmNNeJMHl0Qysr2heT1AcRxvAdN5tSIKRihCS8Eq9Tapqg2O6LEAhbf4Rc3wk7O4WVicJu7tFezAApssucM95mJV26mykzhljOqaO7bYnyi4qJYVfRv7dH8t2NoVtfCzb2aRjVfLiCcDJwkFJ8MJIqfeS48mwzDt28qjk+KY0JrwUVvKwbwD9We94SXhdcpw33sidycz5jUEZH/UQZ1kAXt5MreYFTx1y/aat5Akv3jwBLEBYiU2S4J65oRTHa5OZ9Bq/xnO59CpJ0KsIfxqnTL+wcYsfb74mOYTtkvCTATKhBmGfV/Mym9ijCIRh/KukVEct3rxNKpzPisNDI19/6DeaT6dXlluXz7MV2qTi+N1ImafjQ8mdlWIGClDNjMj27AoKOjQAP+kQRNqpsAC0xK2O1Yqgb0kl59i/MMyNT9Cn1zAfChWg0pEY1NGrogAIs/ipqADM4icJPgRx/VBRA2jpguRWlBoC4NnAhe2K8KYzCM3LNeUMQrN+hn5WpACOldivCF4vzoVZxeGcb/OE7YrwYyHeO337jQRA8dRpo3jp+1DCL8BCEaSie9BiUTsTGsBi5YVeSfC7uGA5PHXcr/m/8XjyiOTwuaiKz+vLoVtlrglgarhrreJ4t/RchxldhVmNkgS7FYfnJfWCMKPbO4EAiIHkNkk4ZhSlx2q4aysLSBNDFzcrDg8MCGfcwh01AUjq2as4vjIefNvvNcDr7wPF4YbxLb+VPHlgWQDKgmM6x4s3q94DLGRJY3NLDt8Eh1O+AYo3qyT8IixsYxFJWNimY7p5qQawtC/EcVrY2MoilrCxVcf22Rda2pmLohdUsUdkdOYkh6myC3QH2IW4sQaHS1WuwjDSwOaf5HLpdayS9ATdAS7kX2P8P8BxWr/5quZjxYoVK1Ys9p/pD26QyB7ZHsFqAAAAAElFTkSuQmCC" alt="" />
                     </div>
-                    <div className='contact-content' onMouseEnter={() => setTooltip({ ...tooltip, mail: true })} onMouseLeave={() => setTooltip({ ...tooltip, mail: false })}>eylaw2@gmail.com</div>
+                    <a href="mailto: eylaw2@gmail.com">
+                        <div className='contact-content' onMouseEnter={() => setTooltip({ ...tooltip, mail: true })} onMouseLeave={() => setTooltip({ ...tooltip, mail: false })}>eylaw2@gmail.com</div>
+                    </a>
                     {
                         tooltip.mail ?
                             <div className='tooltips'>לחצו לשליחת אי-מייל</div>
@@ -73,7 +75,7 @@ function Contact() {
                 </div>
             </div>
             <form id='form-container' onSubmit={handleSubmit(onSubmit)}>
-                <div id='form-header'>צור קשר</div>
+                <div id='contact-form-header'>השאירו פרטים ונחזור אליכם</div>
                 <div id='form-top-contianer'>
                     <input className='form-inputs' type="text" placeholder='שם' {
                         ...register('name', { required: 'נא מלא/י את שמך' })

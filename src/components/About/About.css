@@ -33,3 +33,26 @@
     line-height: 5vh;
     font-size: 17px;
 }
+
+@media only screen and (max-width: 769px) {
+
+    #profile {
+        width: 200px;
+    }
+
+    #about-outer-container {
+        padding: 0;
+    }
+
+    #about-container {
+        border-radius: 0;
+    }
+
+    #about-inner-container {
+        flex-direction: column;
+    }
+
+    #content1 {
+        margin-top: 3vh;
+    }
+}

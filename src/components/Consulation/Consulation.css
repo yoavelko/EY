@@ -94,3 +94,21 @@
 #spacer {
     height: 10vh;
 }
+
+@media screen and (max-width: 500px) {
+
+    .box {
+        margin-bottom: 4vh;
+    }
+
+    #second-content-container {
+        margin: 8vw;
+        margin-top: 0;
+    }
+
+    .consulation-header {
+        padding: 5vh;
+        text-align: center;
+        line-height: 6vh;
+    }
+}

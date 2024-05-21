@@ -15,3 +15,10 @@
     color: rgb(206,177,114);
     cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+
+    #footer-container {
+        display: none;
+    }
+}

@@ -56,3 +56,24 @@ a:visited {
 .headers:hover {
     color: rgb(206,177,114);
 }
+
+@media only screen and (max-width: 769px) {
+
+    #header-container {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        font-size: small;
+    }
+
+    #header-opacity-container {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        font-size: small;
+    }
+
+    #logo {
+        height: 5vh;
+    }
+}

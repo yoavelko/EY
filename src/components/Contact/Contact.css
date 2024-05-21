@@ -64,4 +64,33 @@
     top: -10px; 
     left: 50%;
     margin-left: -10px;
-  }
+}
+
+#contact-form-header {
+    color: var(--gold);
+    font-size: 35px;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 500px) {
+
+    .contact-box {
+        width: 150px;
+        height: 100px;
+        margin-bottom: 3vh;
+    }
+
+    #contact-box-container {
+        margin-top: 5vh;
+    }
+
+    #contact-container {
+        padding-top: 6vh;
+    }
+
+    #contact-form-header {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 2vh;
+    }
+}
